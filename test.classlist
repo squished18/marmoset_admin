@@ -1,0 +1,15 @@
+#Id:Userid:Name:Lecture:Study:Plan:Group:Year:Degree:Initials:Family:Status:Time:Session:Sections
+
+#Fields are separated by colons (:)
+#Id: UW student number; must be an integer
+#Userid: UW CAS userid; when importing, select "Do not limit user ID length." to
+#   ensure the Userid does not get cut off.
+#Name: The user's first name is extracted from this field. This field should have
+#   two parts, separated by a comma and space (e.g. "Smith, John"). Only the
+#   first name is used from this field. The last name is taken from the 'Family'
+#   field.
+#Lecture: Lecture section; must be an integer
+#Family: The user's last name
+
+20170207:test_03:Last_03, First_03:1:1:1:1:2017:Degree:Initials:Last_03:1:1:1:5
+20170208:long_userid:Last_04, First_04:1:1:1:1:2017:Degree:Initials:Last_04:1:1:1:5
