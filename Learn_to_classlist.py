@@ -1,7 +1,23 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-infile = open("Learn_export.csv", "r")
-outfile = open("Learn_export.classlist", "w")
+'''
+© 2018 DAVID LAU ALL RIGHTS RESERVED
+'''
+
+import re
+import sys
+
+file_name_1 = sys.argv[1]
+print file_name_1
+
+extension = re.search(".csv", file_name_1)
+file_name_2 = file_name_1[:extension.start()] + ".classlist"
+
+print file_name_2
+
+infile = open(file_name_1, "r")
+outfile = open(file_name_2, "w")
 # comment out header row
 outfile.write("#")
 
